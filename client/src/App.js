@@ -20,15 +20,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   useEffect(() => {
     checkUserSession();
-
-    // return(
-    //   unsubscribeFromAuth()
-    // )
   }, [checkUserSession]);
-
-  // componentWillUnmount() {
-  //   this.unsubscribeFromAuth();
-  // }
 
   return (
     <div>
