@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
-  width: 55%;
+  width: 65%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,11 @@ export const CheckoutPageContainer = styled.div`
   button {
     margin-left: auto;
     margin-top: 50px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+    margin: 30px auto 0;
   }
 `;
 
