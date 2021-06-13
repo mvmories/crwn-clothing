@@ -8,7 +8,7 @@ import { store, persistor } from "./redux/store";
 
 import "./index.css";
 import App from "./App";
-import serviceWorker from "./service-worker";
+import * as ServiceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -21,4 +21,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-serviceWorker.register();
+ServiceWorkerRegistration.register();
